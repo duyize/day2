@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./icon/iconfont.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <a href="#" class="h1"><i class="iconfont">&#xe653;</i></a>
+            <p class="h2">无连接</p>
+            <a href="#" class="h3"><i class="iconfont">&#xe6f9;</i><i class="iconfont blue">&#xe66f;</i></a>            
+        </header>
+        <section>
+            <div class="main">
+                <a href="#">
+                    <dl>
+                        <dt>
+                            <button>
+                                <i class="iconfont click">&#xe608;</i>
+                            </button>
+                        </dt>
+                        <dd>
+                            电源
+                        </dd>
+                    </dl>
+                </a>
+                <a href="#">
+                    <dl>
+                        <dt>
+                            <button>
+                                <i class="iconfont">&#xe648;</i>
+                            </button>
+                        </dt>
+                        <dd>
+                            电源
+                        </dd>
+                    </dl>
+                </a>
+                <a href="#">
+                    <dl>
+                        <dt>
+                            <button>
+                                <i class="iconfont">&#xe6f9;</i>
+                            </button>
+                        </dt>
+                        <dd>
+                            电源
+                        </dd>
+                    </dl>
+                </a>
+                <a href="#">
+                    <dl>
+                        <dt>
+                            <button>
+                                <i class="iconfont">&#xe6f6;</i>
+                            </button>
+                        </dt>
+                        <dd>
+                            电源
+                        </dd>
+                    </dl>
+                </a>
+            </div>
+            <div class="sec">
+                <p>
+                    <span>滑动控制上下左右，点击确定</span>
+                    <span>长按调节电视音量</span>
+                </p>
+            </div>
+            <div class="btns">
+                <button class="b1">
+                    <i class="iconfont">&#xe608;</i>
+                </button>
+                <button class="b2">
+                    <i class="iconfont">&#xe608;</i>
+                </button>
+            </div>
+        </section>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./icon/iconfont.js"></script>
+</body>
+<script>
+    $('.main a dl dt i').on('click',function(){
+        $(this).addClass('click').siblings().removeClass('click');
+    });
+</script>
+</html>
